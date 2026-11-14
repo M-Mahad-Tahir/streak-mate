@@ -1,6 +1,6 @@
 # Streak Mate
 
-Live address: **https://streakmate.get.novaex.com**
+Live address: **https://streakmate.novaex.pk**
 
 Streak Mate helps students finish their daily work consistently. Students plan tasks, mark them complete and submit them to their teacher. Teachers approve the work or send feedback. Reminders and a motivational streak keep everyone on track.
 
@@ -206,8 +206,8 @@ The `pg_cron` migration, Realtime and the Edge Function are Supabase services an
 1. Set the build command to `npm run build` and the output directory to `dist`. If the repository root is the parent folder, set the root directory to `win-streak`.
 2. Add `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY` and, if you use push, `VITE_VAPID_PUBLIC_KEY`.
 3. Deep links already work. The SPA fallback files `vercel.json` (Vercel) and `public/_redirects` (Netlify) are included.
-4. In Supabase *Auth > URL Configuration*, set **Site URL** to `https://streakmate.get.novaex.com` and add `https://streakmate.get.novaex.com/**` to **Redirect URLs** (keep `http://localhost:5173/**` for local testing).
-5. In AWS Route 53 (the DNS for novaex.com), add the record the host shows for `streakmate.get.novaex.com`, usually a CNAME. HTTPS is required for fingerprint sign-in and push notifications.
+4. In Supabase *Auth > URL Configuration*, set **Site URL** to `https://streakmate.novaex.pk` and add `https://streakmate.novaex.pk/**` to **Redirect URLs** (keep `http://localhost:5173/**` for local testing).
+5. In Cloudflare DNS (where novaex.pk is managed), add the record the host shows for `streakmate.novaex.pk`, usually a CNAME. HTTPS is required for fingerprint sign-in and push notifications.
 
 Fingerprint sign-in and push notifications are tied to the web address, so each user turns them on again once on the new address.
 
