@@ -1,0 +1,22 @@
+# Supabase CLI configuration for Streak Mate.
+# Only the settings this project relies on are listed; the CLI uses defaults for the rest.
+project_id = "win-streak"
+
+[api]
+schemas = ["public"]
+
+[db]
+major_version = 15
+
+[auth]
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173", "https://streakmate.get.novaex.com"]
+minimum_password_length = 8
+
+[auth.email]
+enable_signup = true
+enable_confirmations = false
+
+# The push dispatcher is called by pg_cron with a shared secret header, not a user JWT.
+[functions.send-push]
+verify_jwt = false
